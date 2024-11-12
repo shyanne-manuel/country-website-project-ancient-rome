@@ -1,0 +1,158 @@
+/*--------------------------------------------------------------
+>>> TABLE OF CONTENTS:
+----------------------------------------------------------------
+# Generic (CALLED IN NORMALIZE.CSS)
+	- Normalize
+	- Box sizing
+	- Media width
+# Base
+	- Typography
+	- Elements
+	- Links
+# Layouts
+# Components
+	- Header
+	- Main
+	- Sidebar
+	- Footer
+--------------------------------------------------------------*/
+
+/*--------------------------------------------------------------
+# Base
+--------------------------------------------------------------*/
+body {
+    line-height: 1.5rem;
+}
+
+/* Typography
+--------------------------------------------- */
+
+
+
+/* Elements
+--------------------------------------------- */
+ul li {
+    list-style-type: none;
+    margin-left: 0;
+    padding-left: 0;
+}
+
+/* Links
+--------------------------------------------- */
+a {
+    text-decoration: none;
+}
+
+
+/*--------------------------------------------------------------
+# Layout
+--------------------------------------------------------------*/
+
+/*--------------------------------------------------------------
+# Components
+--------------------------------------------------------------*/
+
+/* Header
+--------------------------------------------- */
+
+/* START -- STYLES FOR MOBILE MENU */
+.site-header {
+    background-color: black;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    
+}
+
+.site-logo {
+    max-width: 6rem;
+    margin: 1rem;
+    
+}
+
+.ham-menu {
+    height: 3.125rem;
+    width: 3.125rem;
+    position: relative;
+    margin-left: auto;
+    margin-right: 1rem;
+
+}
+
+.ham-menu span {
+    height: .3125rem;
+    width: 100%;
+    background-color: white;
+    border: 25px;
+    position: absolute;
+    transform: translate(-50%, -50%);
+    transition: .3s ease;
+}
+
+.ham-menu span:nth-child(1){
+    top: 25%;
+}
+
+.ham-menu span:nth-child(3){
+    top: 75%;
+}
+
+.ham-menu.active span :nth-child(1){
+    top: 50%;
+    transform: translate(-50%, -50%) rotate(45deg);
+}
+
+.ham-menu.active span :nth-child(2){
+    opacity: 0;
+}
+
+.ham-menu.active span :nth-child(3){
+    top: 50%;
+    transform: translate(50%, 50%) rotate(-45deg);
+}
+
+
+
+
+
+.nav-bar-menu {
+    background-color: black;
+    height: 100vh;
+    width: 100%;
+    max-width: 12.5rem;
+    position: fixed;
+    top: 0;
+    right: -200px;
+    font-size: 1.5rem;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    transition: .3s ease;
+    line-height: 3rem;
+
+}
+
+.nav-bar-menu.active {
+    right: 0;
+}
+
+.nav-bar-menu a {
+    color: white;
+}
+
+
+/* END -- STYLES FOR MOBILE MENU */
+
+
+/* Main
+--------------------------------------------- */
+
+
+/* Sidebar
+--------------------------------------------- */
+
+
+/* Footer
+--------------------------------------------- */
