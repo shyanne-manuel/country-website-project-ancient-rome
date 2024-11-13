@@ -20,12 +20,17 @@
 /*--------------------------------------------------------------
 # Base
 --------------------------------------------------------------*/
+
+/* Typography
+--------------------------------------------- */
 body {
     line-height: 1.5rem;
 }
 
-/* Typography
---------------------------------------------- */
+h1,
+h2 {
+    
+}
 
 
 
@@ -85,6 +90,8 @@ a {
     background-color: white;
     border: 25px;
     position: absolute;
+    top: 50%;
+    left: 50%;
     transform: translate(-50%, -50%);
     transition: .3s ease;
 }
@@ -97,18 +104,18 @@ a {
     top: 75%;
 }
 
-.ham-menu.active span :nth-child(1){
+.ham-menu.active span:nth-child(1){
     top: 50%;
     transform: translate(-50%, -50%) rotate(45deg);
 }
 
-.ham-menu.active span :nth-child(2){
+.ham-menu.active span:nth-child(2){
     opacity: 0;
 }
 
-.ham-menu.active span :nth-child(3){
+.ham-menu.active span:nth-child(3){
     top: 50%;
-    transform: translate(50%, 50%) rotate(-45deg);
+    transform: translate(-50%, -50%) rotate(-45deg);
 }
 
 
