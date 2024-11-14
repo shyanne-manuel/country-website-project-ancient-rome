@@ -240,7 +240,7 @@ body footer {
 
 .page-header h1 {
     display: block;
-    color: rgb(173, 104, 13);
+    color: rgb(255, 145, 0);
     font-weight: 900;
     font-size: 5rem;
     line-height: 4rem;
@@ -406,6 +406,47 @@ figure .circus-maximus {
         grid-column: 3 / 5;
     }
 }
+
+/* Sub-page: Emperors (emperors.html)------------------------------- */
+.emperor-heading h1{
+    font-size: 4rem;
+}
+
+.emperors-flexbox figure {
+    box-shadow: 0px 0px 3px 2px #eee;
+    padding: .5rem;
+}
+
+.emperor-list-caption {
+    font-family: Arial, Helvetica, sans-serif;
+    padding: .5rem;
+    margin: 1rem auto 0 auto;
+    text-align: center;
+}
+
+.emperors-table-container {
+    overflow: auto;
+}
+
+.emperors-list-table {
+    box-shadow: 0px 0px 3px 2px #eee;
+    padding: 1rem 2rem 3rem 4rem;
+    border: .125rem solid antiquewhite ;
+    overflow: auto;
+}
+
+.emperors-table-container caption {
+    display: none;
+}
+
+.emperors-list-table td,
+.emperors-list-table th {
+    border: .125rem solid antiquewhite ;
+    text-align: left;
+    padding: .5rem;
+}
+
+
 
 /* Sidebar
 --------------------------------------------- */
