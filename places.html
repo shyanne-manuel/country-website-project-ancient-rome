@@ -11,6 +11,9 @@
     <link rel="manifest" href="site.webmanifest" />
     <link rel="stylesheet" href="styles/normalize-fwd.css">
     <link rel="stylesheet" href="styles/styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Gideon+Roman&display=swap" rel="stylesheet">
 </head>
 
 <body>
@@ -19,13 +22,23 @@
             <a href="index.html" class="site-logo">
                 <img src="favicon.svg" alt="official ancient Rome website logo">
             </a>
-    
+
             <nav class="nav-bar-menu" id="nav-bar-menu">
                 <ul>
+                    <li><a href="index.html">Home</a></li>
                     <li><a href="places.html">Historic Places</a></li>
                     <li><a href="museums.html">Museums</a></li>
-                    <li><a href="#">Emperors</a></li>
-                    <li><a href="#">Credits</a></li>
+                    <li><a href="emperors.html">Emperors</a></li>
+                    <li><a href="citations.html">Credits</a></li>
+                </ul>
+            </nav>
+
+            <nav>
+                <ul class="nav-bar-menu-desktop" id="nav-bar-menu-desktop">
+                    <li><a href="places.html">Historic Places</a></li>
+                    <li><a href="museums.html">Museums</a></li>
+                    <li><a href="emperors.html">Emperors</a></li>
+                    <li><a href="citations.html">Credits</a></li>
                 </ul>
             </nav>
     
@@ -41,33 +54,36 @@
         <main>
             <header class="page-header">
                 <h1>Historic Places</h1>
-                <img src="media/colosseum-landscape.webp" alt="Landscape picture of Rome Colosseum">
+                <img src="media/colosseum-landscape.webp" alt="Landscape picture of Rome Colosseum" class="banner">
             </header>
-        
-            <section class="historic-grid-container grid-container">
-                <figure>
-                    <img src="media/arch-of-titus.webp" alt="Picture of the Arch of Titus">
-                    <h2>Arch of Titus</h2>
-                    <p>The Arch of Titus commemorates the conquest of Jerusalem in 70 C.E.</p>
-                </figure>  
-        
-                <figure>
-                    <img src="media/colosseum-portrait.webp" alt="Picture of thhe Rome Colosseum">
-                    <h2>Colosseum</h2>
-                    <p>It stands as a reminder of the brutal entertainment that was popular in ancient Rome. There is an inscription found that has to do with the inauguration of the building states that it was funded from the immense loot taken by Titus in the war against the Jews. </p>
-                </figure>
+            
+            <section class="main-content">
                 
-                <figure>
-                    <img src="media/via-appia.webp" alt="Picture of the Appian Way, Rome">
-                    <h2>Via Appia Antica</h2>
-                    <p>One of the earliest road used in Rome.Although not mentioned in the Bible, it was likely the highway that Paul used on his trek to Rome.</p>
-                </figure> 
-        
-                <figure>
-                    <img src="media/circus-maximus.webp" alt="Picture of the Arch of Titus">
-                    <h2>Circus Maximus</h2>
-                    <p>This is the city's first circus that existed in Paul's day. Some christians likely died in this arena.</p>
-                </figure> 
+                <section class="historic-grid-container grid-container">
+                    <figure class="titus-grid">
+                        <img src="media/arch-of-titus.webp" alt="Picture of the Arch of Titus">
+                        <h2>Arch of Titus</h2>
+                        <p>The Arch of Titus commemorates the conquest of Jerusalem in 70 C.E.</p>
+                    </figure>  
+            
+                    <figure class="colosseum-grid">
+                        <img src="media/colosseum-portrait.webp" alt="Picture of thhe Rome Colosseum">
+                        <h2>Colosseum</h2>
+                        <p>It stands as a reminder of the brutal entertainment that was popular in ancient Rome. There is an inscription found that has to do with the inauguration of the building states that it was funded from the immense loot taken by Titus in the war against the Jews. </p>
+                    </figure>
+                    
+                    <figure class="appian-grid">
+                        <img src="media/via-appia.webp" alt="Picture of the Appian Way, Rome">
+                        <h2>Via Appia Antica</h2>
+                        <p>One of the earliest road used in Rome.Although not mentioned in the Bible, it was likely the highway that Paul used on his trek to Rome.</p>
+                    </figure> 
+            
+                    <figure class="circus-grid">
+                        <img src="media/circus-maximus.webp" alt="Picture of the Arch of Titus" class="circus-maximus">
+                        <h2>Circus Maximus</h2>
+                        <p>This is the city's first circus that existed in Paul's day. Some christians likely died in this arena.</p>
+                    </figure> 
+                </section>
             </section>
         
         </main>

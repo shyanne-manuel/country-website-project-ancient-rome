@@ -11,6 +11,9 @@
     <link rel="manifest" href="site.webmanifest" />
     <link rel="stylesheet" href="styles/normalize-fwd.css">
     <link rel="stylesheet" href="styles/styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Gideon+Roman&display=swap" rel="stylesheet">
 </head>
 <body>
     <div class="site-wrapper">
@@ -18,13 +21,23 @@
             <a href="index.html" class="site-logo">
                 <img src="favicon.svg" alt="official ancient Rome website logo">
             </a>
-    
+
             <nav class="nav-bar-menu" id="nav-bar-menu">
                 <ul>
+                    <li><a href="index.html">Home</a></li>
                     <li><a href="places.html">Historic Places</a></li>
                     <li><a href="museums.html">Museums</a></li>
                     <li><a href="emperors.html">Emperors</a></li>
-                    <li><a href="#">Credits</a></li>
+                    <li><a href="citations.html">Credits</a></li>
+                </ul>
+            </nav>
+
+            <nav>
+                <ul class="nav-bar-menu-desktop" id="nav-bar-menu-desktop">
+                    <li><a href="places.html">Historic Places</a></li>
+                    <li><a href="museums.html">Museums</a></li>
+                    <li><a href="emperors.html">Emperors</a></li>
+                    <li><a href="citations.html">Credits</a></li>
                 </ul>
             </nav>
     
@@ -40,44 +53,66 @@
         <main>
             <header class="page-header">
                 <h1>Credits</h1>
-                <img src="media/colosseum-landscape.webp" alt="Landscape picture of Rome Colosseum">
+                <img src="media/colosseum-landscape.webp" alt="Landscape picture of Rome Colosseum" class="banner">
             </header>
 
-            <h2>Media Sources</h2>
+            <section class="main-content">
 
-            <h3>Rome building clip</h3>
-            <p>Video by Mustafa Keskin from <a href="https://pixabay.com/" target="_blank" rel="noopener nonreferrer">Pixabay</a></p>
-            <h3>Colosseum Portrait</h3>
-            <p>Image by Leonhard Niederwimmer from <a href="https://pixabay.com/" target="_blank" rel="noopener nonreferrer">Pixabay</a></p>
-            <h3>Colosseum Landscape</h3>
-            <p>Image by krystianwin from <a href="https://pixabay.com/" target="_blank" rel="noopener nonreferrer">Pixabay</a></p>
-            <h3>Arch of Titus</h3>
-            <p>Image by Dominique Devroye from <a href="https://pixabay.com/" target="_blank" rel="noopener nonreferrer">Pixabay</a></p>
-            <h3>Via Appia Antica</h3>
-            <p><a href="https://stock.adobe.com/ca/" target="_blank" rel="noopener nonreferrer">Adobe Stock Images</a></p>
-            <h3>Circus Maximus</h3>
-            <p><a href="https://stock.adobe.com/ca/" target="_blank" rel="noopener nonreferrer">Adobe Stock Images</a></p>
-            <h3>Tiberius Portrait</h3>
-            <p>Image by Angel from <a href="https://pixabay.com/" target="_blank" rel="noopener nonreferrer">Pixabay</a></p>
-            <h3>Gaius Caligula Portrait</h3>
-            <p>Image by pimpompin from <a href="https://pixabay.com/" target="_blank" rel="noopener nonreferrer">Pixabay</a></p>
-            <h3>Claudius I Portrait</h3>
-            <p>via <a href="https://en.wikipedia.org/wiki/Claudius" target="_blank" rel="noopener nonreferrer">Wikimedia Commons</a></p>
-            <h3>Claudius Nero Portrait</h3>
-            <p><a href="https://stock.adobe.com/ca/" target="_blank" rel="noopener nonreferrer">Adobe Stock Images</a></p>
-            <h3>Museo Nazionale Romano</h3>
-            <p>Image by Pexels from <a href="https://pixabay.com/" target="_blank" rel="noopener nonreferrer">Pixabay</a></p> 
-            <h3>Vatican Museum</h3>
-            <p>Image by pascal OHLMANN from <a href="https://pixabay.com/" target="_blank" rel="noopener nonreferrer">Pixabay</a></p> 
-            <h3>Capitoline Museums</h3>
-            <p>Image by Edward Lich from <a href="https://pixabay.com/" target="_blank" rel="noopener nonreferrer">Pixabay</a></p> 
-            <h3>Museums of Trajan's Market</h3>
-            <p>Image by Sara Torda from <a href="https://pixabay.com/" target="_blank" rel="noopener nonreferrer">Pixabay</a></p>
-
-            <h2>Data Sources</h2>
-            <h3><ins cite="https://www.jw.org/en/library/books/Insight-on-the-Scriptures/Rome/">Jehovah's Witnesses Official Website</ins></h3>
-            <h3><ins cite="https://en.wikipedia.org/wiki/List_of_Roman_emperors">Wikipedia Website</ins></h3>
-            
+                <h2>Media Sources</h2>
+    
+                <h3>Rome building clip</h3>
+                <p>Video by Mustafa Keskin from <a href="https://pixabay.com/" target="_blank" rel="noopener nonreferrer">Pixabay</a></p>
+                <h3>Colosseum Portrait</h3>
+                <p>Image by Leonhard Niederwimmer from <a href="https://pixabay.com/" target="_blank" rel="noopener nonreferrer">Pixabay</a></p>
+                <h3>Colosseum Landscape</h3>
+                <p>Image by krystianwin from <a href="https://pixabay.com/" target="_blank" rel="noopener nonreferrer">Pixabay</a></p>
+                <h3>Arch of Titus</h3>
+                <p>Image by Dominique Devroye from <a href="https://pixabay.com/" target="_blank" rel="noopener nonreferrer">Pixabay</a></p>
+                <h3>Via Appia Antica</h3>
+                <p><a href="https://stock.adobe.com/ca/" target="_blank" rel="noopener nonreferrer">Adobe Stock Images</a></p>
+                <h3>Circus Maximus</h3>
+                <p><a href="https://stock.adobe.com/ca/" target="_blank" rel="noopener nonreferrer">Adobe Stock Images</a></p>
+                <h3>Tiberius Portrait</h3>
+                <p>Image by Angel from <a href="https://pixabay.com/" target="_blank" rel="noopener nonreferrer">Pixabay</a></p>
+                <h3>Gaius Caligula Portrait</h3>
+                <p>Image by pimpompin from <a href="https://pixabay.com/" target="_blank" rel="noopener nonreferrer">Pixabay</a></p>
+                <h3>Claudius I Portrait</h3>
+                <p>via <a href="https://en.wikipedia.org/wiki/Claudius" target="_blank" rel="noopener nonreferrer">Wikimedia Commons</a></p>
+                <h3>Claudius Nero Portrait</h3>
+                <p><a href="https://stock.adobe.com/ca/" target="_blank" rel="noopener nonreferrer">Adobe Stock Images</a></p>
+                <h3>Museo Nazionale Romano</h3>
+                <p>Image by Pexels from <a href="https://pixabay.com/" target="_blank" rel="noopener nonreferrer">Pixabay</a></p> 
+                <h3>Vatican Museum</h3>
+                <p>Image by pascal OHLMANN from <a href="https://pixabay.com/" target="_blank" rel="noopener nonreferrer">Pixabay</a></p> 
+                <h3>Capitoline Museums</h3>
+                <p>Image by Edward Lich from <a href="https://pixabay.com/" target="_blank" rel="noopener nonreferrer">Pixabay</a></p> 
+                <h3>Museums of Trajan's Market</h3>
+                <p>Image by Sara Torda from <a href="https://pixabay.com/" target="_blank" rel="noopener nonreferrer">Pixabay</a></p>
+    
+                <h2>Data Sources</h2>
+                <h3><ins cite="https://www.jw.org/en/library/books/Insight-on-the-Scriptures/Rome/">Jehovah's Witnesses Official Website</ins></h3>
+                <h3><ins cite="https://en.wikipedia.org/wiki/List_of_Roman_emperors">Wikipedia Website</ins></h3>
+                
+    
+                <h2>Do you want to visit Rome?</h2>
+                <form action="/handling-form-container" method="post">
+                    <p>
+                        <label for="name">Name:</label>
+                        <input type="text" id="name" name="user-name">
+                    </p>
+                    <p>
+                        <label for="email">Email:</label>
+                        <input type="email" name="email" id="user-email">
+                    </p>
+                    <p>
+                        <label for="msg">Message:</label>
+                        <textarea name="user-message" id="msg"></textarea>
+                    </p>
+                    <p class="submit-button">
+                        <button type="submit">Send your message</button>
+                    </p>
+                </form>
+            </section>
 
 
            
