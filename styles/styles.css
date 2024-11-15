@@ -408,6 +408,8 @@ figure .circus-maximus {
 }
 
 /* Sub-page: Emperors (emperors.html)------------------------------- */
+
+/* Flexbox--------------------------- */
 .emperor-heading h1{
     font-size: 4rem;
 }
@@ -416,6 +418,48 @@ figure .circus-maximus {
     box-shadow: 0px 0px 3px 2px #eee;
     padding: .5rem;
 }
+
+@media (min-width: 50em) {
+    .emperor-heading h1{
+        font-size: 5rem;
+    }
+
+    .emperors-flexbox {
+        max-width: 56.25rem;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        margin: .5rem auto;
+    }
+
+    .emperors-flexbox figure {
+        display: flex;
+        justify-content: space-evenly;
+        align-items: center;
+        margin: .5rem;
+    }
+
+
+
+    .emperor-img {
+        width: 15rem;
+        height: 16rem;
+        display: block;
+        object-fit: cover;
+        object-position: center, bottom;
+        
+        margin-right: 1rem;
+    }
+
+    .figure-flexbox section {
+        margin-right: .5rem;
+    }
+
+    
+
+}
+
+/* Tables----------------------------------- */
 
 .emperor-list-caption {
     font-family: Arial, Helvetica, sans-serif;
@@ -426,13 +470,16 @@ figure .circus-maximus {
 
 .emperors-table-container {
     overflow: auto;
+    max-width: 56.25rem;
+    margin: .5rem auto;
 }
 
 .emperors-list-table {
-    box-shadow: 0px 0px 3px 2px #eee;
+    /* box-shadow: 0px 0px 3px 2px #eee; */
     padding: 1rem 2rem 3rem 4rem;
-    border: .125rem solid antiquewhite ;
+    /* border: .125rem solid antiquewhite ; */
     overflow: auto;
+    margin: 1rem 0;
 }
 
 .emperors-table-container caption {
@@ -445,6 +492,11 @@ figure .circus-maximus {
     text-align: left;
     padding: .5rem;
 }
+
+.emperors-list-table th {
+    text-align: center;
+}
+
 
 
 
