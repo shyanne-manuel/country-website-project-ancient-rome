@@ -28,9 +28,11 @@ body {
     font-size: 1.5rem;
     line-height: 1.5rem;
     background-color: black;
-    color: antiquewhite;
+    color: #faebd7;
     
 }
+
+
 
 h1,
 h2,
@@ -60,6 +62,14 @@ ul li {
 a {
     text-decoration: none;
     color: antiquewhite;
+    padding: .25rem;
+}
+
+a:hover {
+    color: rgb(101, 82, 56);
+    background-color: aliceblue;
+    box-shadow: 0px 0px 3px 2px #eee;
+    border-radius: .5rem;
 }
 
  p {
@@ -162,7 +172,7 @@ body footer {
 
 
 .nav-bar-menu {
-    background-color: rgb(0, 0, 0, .5);
+    background-color: rgb(0, 0, 0, .75);
     height: 100vh;
     width: 100%;
     max-width: 12.5rem;
@@ -198,7 +208,7 @@ body footer {
 
 @media (min-width: 50em) {
 .site-header{
-    background-color: rgb(0, 0, 0, .5);
+    background-color: rgb(0, 0, 0, .75);
 }
 
 .nav-bar-menu {
@@ -234,7 +244,7 @@ body footer {
     top: 0;
     z-index: -1;
     object-fit: cover;
-    object-position: top, left;
+    object-position: center bottom;
     
 }
 
@@ -299,11 +309,29 @@ body footer {
 .explore-section article {
     margin: 2rem .5rem;
     min-width: 11rem;
+    /* min-height: 13rem;
+    max-height: 28rem; */
     max-width: 18.75rem;
     box-shadow: 0px 0px 3px 2px #eee;
     position: relative;
     padding: .5rem;
 }
+
+/* .general-box img {
+    display: block;
+    position: absolute;
+    top: 0;
+    object-fit: fill;
+}
+
+.general-box h3 {
+    display: block;
+    position: absolute;
+    top: 45%;
+    text-align: center;
+} */
+
+
 
 @media (min-width: 50em) {
     .explore-section {
@@ -355,8 +383,9 @@ body footer {
 figure .circus-maximus {
     height: 20rem;
     object-fit: cover;
-    object-position: right, bottom;
+    object-position: right bottom;
 }
+
 
 @media (min-width: 50em){
 
@@ -386,6 +415,10 @@ figure .circus-maximus {
 }
 
 /* Sub-page: Museums Page (museums.html)-----------------------------  */
+
+/* .museums-header {
+    font-size: 4rem;
+} */
 
 @media (min-width: 50em){
     
@@ -446,7 +479,7 @@ figure .circus-maximus {
         height: 16rem;
         display: block;
         object-fit: cover;
-        object-position: center, bottom;
+        object-position: center bottom;
         
         margin-right: 1rem;
     }
@@ -498,7 +531,20 @@ figure .circus-maximus {
 }
 
 
+/* Sub-page: Credits Page (citations.html)---------------------------- */
 
+.credits-wrapper {
+    text-align: center;
+}
+
+.credits-wrapper h3 {
+    font-family: Arial, Helvetica, sans-serif;
+    margin-bottom: 0;
+}
+
+.credits-wrapper p {
+    margin-top: 0;
+}
 
 /* Sidebar
 --------------------------------------------- */
