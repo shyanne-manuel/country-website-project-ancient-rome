@@ -349,7 +349,10 @@ body footer {
     max-width: 18.75rem;
     margin-left: auto;
     margin-right: auto;
+}
 
+.caption p {
+    padding: 1rem;
 }
 
 .grid-container h2,
@@ -360,20 +363,20 @@ body footer {
 @media (min-width: 50em) {
 
     .grid-container {
-        width: 50rem;
+        /* max-width: 50rem; */
+        height: auto;
         display: grid;
         grid-template-columns: repeat(4, 1fr);
         grid-template-rows: repeat(3, 1fr);
         gap: .5rem;
-        margin-left: auto;
-        margin-right: auto;
-        margin-bottom: 2rem;
+        /* margin: 0 auto 2rem auto; */
+        /* margin-bottom: 2rem; */
     }
     
     .grid-container figure {
         padding: 0;
         margin: 0;
-        max-width: none;
+        max-width: 0;
     }
 }
 
@@ -396,6 +399,7 @@ figure .circus-maximus {
 
 .appian-grid {
     grid-column: 1 / 3;
+    grid-row: 1 / 3;
 }
 
 .titus-grid {
@@ -422,21 +426,13 @@ figure .circus-maximus {
 
 @media (min-width: 50em){
     
+    .museums-grid-container p {
+        grid-column: 1 / 2;
+        grid-row: 1 / 3;
+    }
+
     .capitoline-grid {
-        grid-column: 1 / 5;
-    }
-    
-    .imperial-grid {
-        grid-column: 1 / 3;
-        grid-row: 2 / 4;
-    }
-
-    .national-grid {
-        grid-column: 3 / 5;
-    }
-
-    .vatican-grid {
-        grid-column: 3 / 5;
+        grid-column: 2 / 5;
     }
 }
 
