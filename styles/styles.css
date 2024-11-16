@@ -363,14 +363,14 @@ body footer {
 @media (min-width: 50em) {
 
     .grid-container {
-        /* max-width: 50rem; */
+        max-width: 50rem;
         height: auto;
         display: grid;
         grid-template-columns: repeat(4, 1fr);
         grid-template-rows: repeat(3, 1fr);
         gap: .5rem;
-        /* margin: 0 auto 2rem auto; */
-        /* margin-bottom: 2rem; */
+        margin: 0 auto 2rem auto;
+         margin-bottom: 2rem;
     }
     
     .grid-container figure {
