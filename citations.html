@@ -26,7 +26,7 @@
             <nav class="nav-bar-menu" id="nav-bar-menu">
                 <ul>
                     <li><a href="index.html">Home</a></li>
-                    <li><a href="places.html">Historic Places</a></li>
+                    <li><a href="places.html">Landmarks</a></li>
                     <li><a href="museums.html">Museums</a></li>
                     <li><a href="emperors.html">Emperors</a></li>
                     <li><a href="citations.html">Credits</a></li>
@@ -35,7 +35,7 @@
 
             <nav>
                 <ul class="nav-bar-menu-desktop" id="nav-bar-menu-desktop">
-                    <li><a href="places.html">Historic Places</a></li>
+                    <li><a href="places.html">Landmarks</a></li>
                     <li><a href="museums.html">Museums</a></li>
                     <li><a href="emperors.html">Emperors</a></li>
                     <li><a href="citations.html">Credits</a></li>
@@ -54,7 +54,9 @@
         <main id="site-main">
             <header class="page-header">
                 <h1>Credits</h1>
-                <img src="media/colosseum-landscape.webp" alt="Landscape picture of Rome Colosseum" class="banner">
+                <video autoplay playsinline muted loop aria-label="Video of a Ceiling of Historic Building" class="banner">
+                    <source src="media/rome-building-clip.mp4" type="video/mp4">
+                </video>
             </header>
 
             <section class="main-content credits-wrapper">
@@ -96,8 +98,9 @@
                 <h3><ins cite="https://www.jw.org/en/library/books/Insight-on-the-Scriptures/Rome/"><a href="https://www.jw.org/en/library/books/Insight-on-the-Scriptures/Rome/" target="_blank" rel="noopener nonreferrer">Jehovah's Witnesses Official Website</a></ins></h3>
                 <h3><ins cite="https://en.wikipedia.org/wiki/List_of_Roman_emperors"><a href="https://en.wikipedia.org/wiki/List_of_Roman_emperors" target="_blank" rel="noopener nonreferrer">Wikipedia Website</a></ins></h3>
                 
-    
-                <h2>Do you want to visit Rome?</h2>
+               
+
+                <h2 class="form-title">Do you want to visit Rome?</h2>
                 <form action="/handling-form-container" method="post">
                     <p>
                         <label for="name">Name:</label>
@@ -115,6 +118,7 @@
                         <button type="submit">Send your message</button>
                     </p>
                 </form>
+                
             </section>
 
 
